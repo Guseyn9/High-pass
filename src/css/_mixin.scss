@@ -1,0 +1,119 @@
+@mixin clearListStyles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btnReset {
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #202020;
+  margin: 0;
+}
+
+@mixin descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
+  margin: 0;
+}
+
+@mixin titleTwo {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  color: $colorWhite;
+  margin: 0;
+}
+
+@mixin pin {
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $colorWhite;
+  background-color: $bgcolor;
+  padding: 7px 14px;
+}
+
+@mixin hover-text {
+  color: #FF6E30;
+}
+
+@mixin active-text {
+  color: #CE4307;
+}
+
+@mixin focus-text {
+  background-color: #BC572B;
+  padding: 0 5px;
+  outline: none;
+}
+
+@mixin hover-btn {
+  background-color: #BC572B;
+}
+
+@mixin active-btn {
+  background-color: #CE4307;
+}
+
+@mixin focus-btn {
+  outline: 3px solid #CE4307;
+}
+
+@mixin hover-inputSearch {
+  border-bottom: 1px solid #FF6E30;
+}
+
+@mixin active-inputSearch {
+  border-bottom: 1px solid #CE4307;
+}
+
+@mixin hover-aboutInput {
+  color: #FF6E30;
+}
+
+@mixin focus-aboutInput {
+  outline: 1px solid #FF6E30;
+}
+
+@mixin hover-btn2 {
+  background-color: #FF6E30;
+}
+
+@mixin active-btn2 {
+  background-color: #CE4307;
+  border: 3px solid #CE4307;
+}
+
+@mixin focus-btn2 {
+  background-color: #BC572B;
+  outline: none;
+}
+
+@mixin hover-icon {
+  fill: #FF6E30;
+}
+
+@mixin active-icon {
+  fill: #CE4307;
+}
+
+@mixin focus-icon {
+  fill: #BC572B;
+}
+
+@mixin mediaTitle {
+  font-size: 18px;
+  line-height: 23px;
+}

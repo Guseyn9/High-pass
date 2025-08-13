@@ -1,0 +1,69 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'TTFirsNeue';
+	src: local("TTFirsNeue-Regular"),
+	url("../fonts/TTFirsNeue-Regular.woff2") format('woff2'),
+	url("../fonts/TTFirsNeue-Regular.woff") format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TTFirsNeue';
+	src: local("TTFirsNeue-Bold"),
+	url("../fonts/TTFirsNeue-Bold.woff2") format('woff2'),
+	url("../fonts/TTFirsNeue-Bold.woff") format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+  font-family: 'TTFirsNeue';
+  margin: 0;
+}
+
+.container {
+  max-width: $containerMaxwidth;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  @include btnReset;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorWhite;
+  background-color: #FF6E30;
+  padding: 15px 20px;
+  transition: background-color .3s ease-in-out;
+  transition-property: background-color, outline;
+}
+
+.btn:hover {
+  @include hover-btn
+}
+
+.btn:active {
+  @include active-btn
+}
+
+.btn:focus-visible {
+  @include focus-btn
+}
